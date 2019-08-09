@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -65,7 +66,8 @@ namespace WebApplication1.Controllers
                 catch (Exception e) { return BadRequest("El nombre de usuario o contraseña invalidos"); }
                 if (login.NickName == us.NickName && login.Password == us.Password)
                 {
-                    return Ok(usuario);
+                    //object jsonResponse = JsonConvert.SerializeObject(usuario);
+                    return Json(usuario);
                 }
                 else { return BadRequest("Datos inválidos: " + login.Password); }
 
