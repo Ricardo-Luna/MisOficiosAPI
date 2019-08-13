@@ -492,8 +492,8 @@ C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficios
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\bin\es\System.Web.WebPages.resources.dll
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

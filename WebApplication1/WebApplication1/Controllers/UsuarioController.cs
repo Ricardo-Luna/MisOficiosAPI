@@ -8,7 +8,6 @@ using System.Text;
 using System.Web.Http;
 using System.Web.Http.Description;
 using WebApplication1.ModelosDataCenter;
-using WebApplication1.ModelsDataCenter;
 
 
 namespace WebApplication1.Controllers
@@ -16,13 +15,13 @@ namespace WebApplication1.Controllers
     public class UsuariosController : ApiController
     {
         private Model1 db = new Model1();
-        vwUsuario us;
+        Usuario us;
         private string connectionString = "data source=Desarrollo;initial catalog=DataCenter;user id=sa;password= Lamismadesiempre= ;multipleactiveresultsets=True;application name=EntityFramework";
         private System.Data.SqlClient.SqlDataReader consul;
         [HttpPost]
         [Route("api/Usuarios/Login")]
-        [ResponseType(typeof(Usuario))]
-        public IHttpActionResult PostGrupos([FromBody] Login login)
+        [ResponseType(typeof(vwUsuario))]
+        public IHttpActionResult PostGrupos([FromBody] login login)
         {
             login.Password = GetMd5Hash(login.Password);
 
@@ -34,7 +33,7 @@ namespace WebApplication1.Controllers
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand("uspUsuariosGrupoDerechosObtener", conn))
             {
-                var usuario = new List<vwUsuario>();
+                var usuario = new List<Usuario>();
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter nn = cmd.Parameters.Add("@NickName", SqlDbType.VarChar, 25);
@@ -44,9 +43,8 @@ namespace WebApplication1.Controllers
                 consul = cmd.ExecuteReader();
                 consul.Read();
 
-                us = new vwUsuario();
-                try
-                {
+                us = new Usuario();
+             //  try                {
                     us.IdUsuario = new Guid(consul["IdUsuario"].ToString());
                     us.NickName = consul["NickName"].ToString();
                     us.Password = consul["Password"].ToString();
@@ -54,27 +52,40 @@ namespace WebApplication1.Controllers
                     us.NombreArea = consul["AreaNombre"].ToString();
                     us.IdGrupo = new Guid(consul["IdGrupo"].ToString());
                     us.GrupoUsuarios = consul["Nombre"].ToString();
+                    //while (consul.Read())
+                    //{
+                    //    Permiso permiso = new Permiso();
+                    //    permiso.IdPermiso = new Guid(consul["IdDerecho"].ToString());
+                    //    permiso.Numero = Convert.ToInt32(consul["NombreDerecho"].ToString());
+                    //    us.Permisos.Add(permiso);
+                    //}
+                    //usuario.Add(us);
+
+
                     while (consul.Read())
                     {
                         Permiso permiso = new Permiso();
                         permiso.IdPermiso = consul["IdDerecho"].ToString();
                         permiso.Numero = consul["NombreDerecho"].ToString();
                         us.Permisos.Add(permiso);
+                        
                     }
                     usuario.Add(us);
-                }
-                catch (Exception e) { return BadRequest("El nombre de usuario o contraseña invalidos"); }
+              //  }
+              //  catch (Exception e) { return BadRequest("El nombre de usuario o contraseña invalidos"); }
                 if (login.NickName == us.NickName && login.Password == us.Password)
                 {
                     //object jsonResponse = JsonConvert.SerializeObject(usuario);
-                    return Json(usuario);
+
+                  //  var model = JsonConvert.DeserializeObject<List<Usuario>>(usuario);
+                    return Ok(model);
                 }
                 else { return BadRequest("Datos inválidos: " + login.Password); }
 
 
 
 
-                conn.Close();
+
 
             }
         }

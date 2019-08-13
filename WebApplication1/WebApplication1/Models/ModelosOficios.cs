@@ -86,6 +86,6 @@ namespace WebApplication1.Models
                 .IsUnicode(false);
         }
 
-        public System.Data.Entity.DbSet<WebApplication1.ModelsDataCenter.Usuario> Usuarios { get; set; }
+        //public System.Data.Entity.DbSet<WebApplication1.ModelsDataCenter.Usuario> Usuarios { get; set; }
     }
 }

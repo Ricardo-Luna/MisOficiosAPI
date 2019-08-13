@@ -24,6 +24,6 @@ namespace WebApplication1.ModelosDataCenter
         [StringLength(500)]
         public string Descripcion { get; set; }
 
-        public byte? Acceso { get; set; }
+        public int Acceso { get; set; }
     }
 }

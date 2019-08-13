@@ -8,7 +8,7 @@ namespace WebApplication1.ModelosDataCenter
 
     public partial class Model1 : DbContext
     {
-        internal IEnumerable<object> vwGruposDerecho;
+        
 
         public Model1()
             : base("name=DataCenter")
@@ -20,8 +20,10 @@ namespace WebApplication1.ModelosDataCenter
         public virtual DbSet<vwDerecho> vwDerechos { get; set; }
         public virtual DbSet<vwGrupos> vwGrupos { get; set; }
         public virtual DbSet<vwGruposDerecho> vwGruposDerechos { get; set; }
+        public virtual DbSet<Persona> Personas { get; set; }
         public virtual DbSet<vwGrupoUsuario> vwGrupoUsuarios { get; set; }
         public virtual DbSet<vwUsuario> vwUsuarios { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -222,6 +224,6 @@ namespace WebApplication1.ModelosDataCenter
             //    .IsUnicode(false);
         }
 
-        public System.Data.Entity.DbSet<WebApplication1.ModelsDataCenter.Usuario> Usuarios { get; set; }
+        public System.Data.Entity.DbSet<WebApplication1.ModelosDataCenter.Usuario> Usuario { get; set; }
     }
 }

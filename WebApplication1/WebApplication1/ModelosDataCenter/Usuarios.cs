@@ -1,12 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
-namespace WebApplication1.ModelsDataCenter
+namespace WebApplication1.ModelosDataCenter
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-
     public partial class Usuario
     {
         [Key]
@@ -56,7 +59,8 @@ namespace WebApplication1.ModelsDataCenter
         [NotMapped]
         public List<Permiso> Permisos { get; set; }
 
-        public Usuario() {
+        public Usuario()
+        {
 
             Permisos = new List<Permiso>();
         }

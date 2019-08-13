@@ -177,7 +177,7 @@
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
-    <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\Usuarios1Controller.cs" />
     <Compile Include="DTO.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,25 +186,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelosDataCenter\Grupo.cs" />
+    <Compile Include="ModelosDataCenter\login.cs" />
     <Compile Include="ModelosDataCenter\Model1.cs" />
+    <Compile Include="ModelosDataCenter\Permiso.cs" />
+    <Compile Include="ModelosDataCenter\Persona.cs" />
+    <Compile Include="ModelosDataCenter\Usuario.cs" />
     <Compile Include="ModelosDataCenter\UsuarioDerecho.cs" />
+    <Compile Include="ModelosDataCenter\Usuarios.cs" />
     <Compile Include="ModelosDataCenter\vwArea.cs" />
     <Compile Include="ModelosDataCenter\vwDerecho.cs" />
     <Compile Include="ModelosDataCenter\vwGrupos.cs" />
     <Compile Include="ModelosDataCenter\vwGruposDerecho.cs" />
     <Compile Include="ModelosDataCenter\vwGrupoUsuario.cs" />
     <Compile Include="ModelosDataCenter\vwUsuario.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Area.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Derecho.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Grupo.cs" />
-    <Compile Include="ModelsDataCenterMaqui\GrupoDerecho.cs" />
-    <Compile Include="ModelsDataCenterMaqui\GrupoUsuario.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Login.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Permiso.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Persona.cs" />
-    <Compile Include="ModelsDataCenterMaqui\RequestLogin.cs" />
-    <Compile Include="ModelsDataCenterMaqui\Usuario.cs" />
-    <Compile Include="ModelsDataCenterMaqui\UsuarioDerecho.cs" />
     <Compile Include="Models\Archivos.cs" />
     <Compile Include="Models\CarpetaIdViewModel.cs" />
     <Compile Include="Models\Carpetas.cs" />
