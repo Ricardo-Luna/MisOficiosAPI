@@ -105,7 +105,7 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return CreatedAtRoute("DefaultApi", new { id = grupos.IdGrupo }, grupos);
+            
         }
         private bool GruposExists(Guid id)
         {

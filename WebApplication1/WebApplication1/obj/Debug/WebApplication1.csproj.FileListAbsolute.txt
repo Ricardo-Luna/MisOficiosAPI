@@ -496,4 +496,3 @@ C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficios
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\ricardo.luna\Documents\Development\Mis Oficios\MisOficiosAPI\MisOficiosAPI\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

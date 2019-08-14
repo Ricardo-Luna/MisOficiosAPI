@@ -145,7 +145,7 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            
         }
         private bool DocumentosExists(Guid id)
         {

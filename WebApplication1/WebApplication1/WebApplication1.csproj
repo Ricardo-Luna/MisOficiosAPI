@@ -177,7 +177,8 @@
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
-    <Compile Include="Controllers\Usuarios1Controller.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\UsuariosDeprecated.cs" />
     <Compile Include="DTO.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,14 +187,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelosDataCenter\Area.cs" />
+    <Compile Include="ModelosDataCenter\Derecho.cs" />
     <Compile Include="ModelosDataCenter\Grupo.cs" />
     <Compile Include="ModelosDataCenter\login.cs" />
     <Compile Include="ModelosDataCenter\Model1.cs" />
     <Compile Include="ModelosDataCenter\Permiso.cs" />
     <Compile Include="ModelosDataCenter\Persona.cs" />
     <Compile Include="ModelosDataCenter\Usuario.cs" />
-    <Compile Include="ModelosDataCenter\UsuarioDerecho.cs" />
-    <Compile Include="ModelosDataCenter\Usuarios.cs" />
     <Compile Include="ModelosDataCenter\vwArea.cs" />
     <Compile Include="ModelosDataCenter\vwDerecho.cs" />
     <Compile Include="ModelosDataCenter\vwGrupos.cs" />
@@ -216,6 +217,7 @@
     <Compile Include="Models\Opciones.cs" />
     <Compile Include="Models\UsuarioDestinatarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\UsuarioViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

@@ -6,21 +6,32 @@ namespace WebApplication1.ModelosDataCenter
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("UsuarioDerechos")]
-    public partial class UsuarioDerecho
+    [Table("Derechos")]
+    public partial class Derecho
     {
+        
         [Key]
-        [Column(Order = 0)]
-        public Guid IdUsuario { get; set; }
-
-        [Key]
-        [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IdDerecho { get; set; }
+
+        [StringLength(100)]
+        public string Nombre { get; set; }
+
+        [StringLength(500)]
+        public string Descripcion { get; set; }
+
+        public int Acceso { get; set; }
 
         [Column(TypeName = "smalldatetime")]
         public DateTime? FechaActualizacion { get; set; }
 
         public Guid? IdUsuarioActualizacion { get; set; }
+
+        // VIRTUAL
+
+        public virtual ICollection<Grupo> Grupos { get; set; }
+
+        public virtual ICollection<Usuario> Usuarios { get; set; }
+        
     }
 }
